@@ -15,9 +15,9 @@ is simple demo of how to use nbdev and quarto.
 
 ``` mermaid
 flowchart LR
-  A[simpleapp] --&gt; B(app)
-  B --&gt; C{print_sys_info()}
-  C --&gt; D[Final Result]
+  A[simpleapp] --> B(app)
+  B --> C{print_sys_info()}
+  C --> D[Final Result]
 ```
 
 ## Install

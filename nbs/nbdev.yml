@@ -2,8 +2,8 @@ project:
   output-dir: _docs
 
 website:
-  title: "simpleapp"
-  site-url: "https://rajendrakumaryadav.github.io/simpleapp"
+  title: "simpleapp-nbdev"
+  site-url: "https://rajendrakumaryadav.github.io/simpleapp-nbdev"
   description: "Simple Application"
-  repo-branch: main
-  repo-url: "https://github.com/rajendrakumaryadav/simpleapp"
+  repo-branch: master
+  repo-url: "https://github.com/rajendrakumaryadav/simpleapp-nbdev"
