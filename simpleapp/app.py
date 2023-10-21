@@ -3,12 +3,12 @@
 # %% auto 0
 __all__ = ['logger', 'print_sys_info', 'main']
 
-# %% ../nbs/001_app.ipynb 1
+# %% ../nbs/001_app.ipynb 2
 import sys
 from fastcore.script import *
 import logging
 
-# %% ../nbs/001_app.ipynb 2
+# %% ../nbs/001_app.ipynb 3
 logger = logging.getLogger(__name__)
 # format
 logging.basicConfig(format='%(asctime)s %(levelname)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
@@ -21,7 +21,7 @@ def print_sys_info():
     logger.info("Python Prefix: %s", sys.prefix)
     logger.info("Python Executable: %s", sys.executable)
 
-# %% ../nbs/001_app.ipynb 4
+# %% ../nbs/001_app.ipynb 5
 @call_parse
 def main():
     print_sys_info()
