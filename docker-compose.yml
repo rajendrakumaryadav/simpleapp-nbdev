@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  production:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    command: python -c "from simpleapp import app;"
+    # Change these ports according to your needs
+    ports:
+      - "8000:8000"
+
+  development:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    command: jupyter notebook --ip=0.0.0.0 --port=9543 --allow-root --NotebookApp.token='' --NotebookApp.password=''
+    # Expose port 9543 for Jupyter notebook
+    ports:
+      - "9543:9543"

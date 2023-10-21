@@ -1,0 +1,7 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 001_app.ipynb
+      - 002_docker_info.ipynb
+      - 00_core.ipynb

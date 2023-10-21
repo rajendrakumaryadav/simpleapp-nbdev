@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "simpleapp"
+  site-url: "https://rajendrakumaryadav.github.io/simpleapp"
+  description: "Simple Application"
+  repo-branch: main
+  repo-url: "https://github.com/rajendrakumaryadav/simpleapp"
