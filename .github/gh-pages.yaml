@@ -1,0 +1,20 @@
+name: Push the page for nbdev project automatically
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install nbdev
+        run: pip install nbdev
+      - name: Build the nbdev project
+        run: nbdev_build_gh_pages
+      - name: Push the page to GitHub
+        run: |
+          git config --global user.email "13816347+rajendrakumaryadav@users.noreply.github.com"
+          git config --global user.name "rajendrakumaryadav"
+          git add .
+          git commit -m "Automatically push the page for nbdev project"
+          git push origin gh-pages
