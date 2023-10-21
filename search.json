@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "002_docker_info.html",
+    "href": "002_docker_info.html",
+    "title": "docker",
+    "section": "",
+    "text": "import docker\n\n\nclient = docker.from_env()\n\nDockerException: Error while fetching server API version: (2, 'CreateFile', 'The system cannot find the file specified.')\n\n\n\n# show containers as json\n\nfor container in client.containers.list():\n    print(container.attrs['Config']['Image'],\":\", container.attrs['Config'])"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Simple Application Guide",
+    "section": "",
+    "text": "This is simple cli application that prints information about Python and the system it is running on. It is build using nbdev and quarto and point of curiosity. It does not considering itself a serious project. It is simple demo of how to use nbdev and quarto."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Simple Application Guide",
+    "section": "Install",
+    "text": "Install\npip install simplepapp"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Simple Application Guide",
+    "section": "How to use",
+    "text": "How to use\nImport the library\n\n\nCode\nfrom simpleapp.app import *\n\n\n\n\nCode\nprint_sys_info()\n\n\n10/21/2023 01:18:20 PM INFO - Python Version: 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]\n10/21/2023 01:18:20 PM INFO - Python Executable: C:\\Users\\rajen\\.conda\\envs\\py3.11\\python.exe\n10/21/2023 01:18:20 PM INFO - Python Platform: win32\n10/21/2023 01:18:20 PM INFO - Python Prefix: C:\\Users\\rajen\\.conda\\envs\\py3.11\n10/21/2023 01:18:20 PM INFO - Python Executable: C:\\Users\\rajen\\.conda\\envs\\py3.11\\python.exe\n\n\n\nHappy coding!\n\n\nBuild with Love :heart: using Python and nbdev in Jupyter Notebooks."
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()"
+  },
+  {
+    "objectID": "app.html",
+    "href": "app.html",
+    "title": "app",
+    "section": "",
+    "text": "source\n\nprint_sys_info\n\n print_sys_info ()\n\n\nsource\n\n\nmain\n\n main ()"
+  }
+]
